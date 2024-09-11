@@ -4,7 +4,7 @@ import Animations from './Animations';
 import Variants from './Variants';
 import Gestures from './Gestures';
 import Drag from './Drag';
-import Scroll from './TransformX';
+import Scroll from './Scroll';
 import TransformX from './TransformX';
 
 const GlobalStyle = createGlobalStyle`
@@ -29,7 +29,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <TransformX />
+      <Scroll />
     </>
   );
 }
