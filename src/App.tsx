@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import Animations from './Animations';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}
@@ -24,6 +25,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
+      <Animations />
     </>
   );
 }
