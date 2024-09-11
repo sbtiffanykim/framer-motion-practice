@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import Animations from './Animations';
 import Variants from './Variants';
+import Gestures from './Gestures';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}
@@ -26,7 +27,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Variants />
+      <Gestures />
     </>
   );
 }
