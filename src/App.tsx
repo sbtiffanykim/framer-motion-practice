@@ -4,6 +4,8 @@ import Animations from './Animations';
 import Variants from './Variants';
 import Gestures from './Gestures';
 import Drag from './Drag';
+import Scroll from './TransformX';
+import TransformX from './TransformX';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}
@@ -15,7 +17,6 @@ body {
   font-family: 'Poppins', sans-serif;
   color:black;
   line-height: 1.2;
-  background:linear-gradient(135deg,#e09,#d0e);
 }
 a {
   text-decoration:none;
@@ -28,7 +29,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Drag />
+      <TransformX />
     </>
   );
 }
