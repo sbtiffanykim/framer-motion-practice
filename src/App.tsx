@@ -1,11 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
-import Animations from './Animations';
-import Variants from './Variants';
-import Gestures from './Gestures';
-import Drag from './Drag';
-import Scroll from './Scroll';
-import TransformX from './TransformX';
+import Path from './Path';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}
@@ -17,6 +12,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color:black;
   line-height: 1.2;
+  background: linear-gradient(135deg, #e09, #d0e);
 }
 a {
   text-decoration:none;
@@ -29,7 +25,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Scroll />
+      <Path />
     </>
   );
 }
