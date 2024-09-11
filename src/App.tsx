@@ -3,6 +3,7 @@ import reset from 'styled-reset';
 import Animations from './Animations';
 import Variants from './Variants';
 import Gestures from './Gestures';
+import Drag from './Drag';
 
 const GlobalStyle = createGlobalStyle`
 ${reset}
@@ -27,7 +28,7 @@ export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Gestures />
+      <Drag />
     </>
   );
 }
